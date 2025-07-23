@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>关卡1：颜色找规律</title>
+</head>
+<body>
+  <h2>🔴🔵🔴🔵 ___ ?</h2>
+  <button onclick="check('🔴')">🔴</button>
+  <button onclick="check('🔵')">🔵</button>
+  <button onclick="check('🟢')">🟢</button>
+  <p id="result"></p>
+  <script>
+    function check(choice) {
+      const result = document.getElementById("result");
+      if (choice === "🔴") {
+        result.innerText = "太棒了，答对啦！";
+      } else {
+        result.innerText = "没关系的，我们再试试吧！";
+      }
+    }
+  </script>
+</body>
+</html>
