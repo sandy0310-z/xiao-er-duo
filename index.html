@@ -3,13 +3,20 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>圆圆鼠的数学森林</title>
+  <title>鼠鼠的数学冒险</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>欢迎来到圆圆鼠的魔法森林</h1>
-  <p>点击开始冒险吧！</p>
-  <button onclick="startGame()">开始游戏</button>
-  <script src="script.js"></script>
+<body onload="playMusic()">
+  <audio id="bgm" src="audio/forest.mp3" loop></audio>
+  <h1 class="fade-in">欢迎来到鼠鼠的魔法森林</h1>
+  <img src="images/shushu.png" alt="鼠鼠" class="character-bounce">
+  <p class="slide-in">点击开始冒险吧！</p>
+  <a href="map.html"><button class="btn">开始游戏</button></a>
+  <script>
+    function playMusic() {
+      const bgm = document.getElementById('bgm');
+      bgm.play().catch(e => {});
+    }
+  </script>
 </body>
 </html>
