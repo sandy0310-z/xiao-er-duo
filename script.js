@@ -1,5 +1,8 @@
 
-function startGame() {
-  alert("进入第一关：找规律！");
-  window.location.href = "level1.html";
+function goToLevel(page) {
+    var clickSound = new Audio('audio/click.mp3');
+    clickSound.play();
+    setTimeout(() => {
+        window.location.href = page;
+    }, 500);
 }
