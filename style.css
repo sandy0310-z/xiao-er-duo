@@ -1,1 +1,49 @@
-/* General Style Placeholder */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdf6e3;
+  color: #073642;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-container {
+  text-align: center;
+}
+
+canvas {
+  border: 3px solid #657b83;
+  background-color: #eee8d5;
+}
+
+.controls {
+  margin-top: 12px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 0 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #268bd2;
+  color: white;
+  cursor: pointer;
+}
+
+#stepsCount {
+  margin-left: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #006dab;
+}
+
+#status {
+  display: inline-block;
+  margin-left: 16px;
+  font-weight: bold;
+}

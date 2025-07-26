@@ -1,1 +1,22 @@
-<!-- Map Start Page with START button -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鼠鼠闯关 Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div class="controls">
+      <button id="resetBtn">重置关卡</button>
+      <button id="hintBtn">提示路线（AI）</button>
+      <button id="autoBtn">自动通关（AI）</button>
+      <span id="stepsCount">步数：0</span>
+      <span id="status"></span>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
